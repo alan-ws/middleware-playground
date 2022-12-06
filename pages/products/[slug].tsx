@@ -1,0 +1,3 @@
+export default function ProductSlug() {
+  return <h1>Product: 1</h1>;
+}
