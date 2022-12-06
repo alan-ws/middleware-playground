@@ -15,12 +15,13 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to{" "}
-          <Link as={"/about"} href="/about">
+          <Link as={"/about"} href="/about" prefetch={false}>
             Next.js!
           </Link>
         </h1>
         <h1 className={styles.title}>
           <Link
+            prefetch={false}
             as="/product/[slug]"
             href={{
               pathname: "/product/[slug]",
